@@ -38,3 +38,20 @@ git add .
 git commit -m "Pujada projecte Viatge/Menjar"
 git push origin main
 --Fi Versio 5--
+--Versio 6--
+
+git branch ampliació
+git checkout ampliació
+git checkout  main
+git add .
+git commit -m "Actu projecte"
+git push origin main
+git checkout main
+git branch -d ampliació
+git branch ampliació
+git checkout ampliació
+git add .
+git commit -m "Canvi projecte"
+git push origin ampliació
+
+--Fi Versio 6--
