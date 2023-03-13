@@ -21,4 +21,10 @@ git add .
 git commit -m "Pujada de Llicencia i examen.txt"
 git push origin main
 --Fi Versio 2--
+--Versio 3--
+mkdir projecteC
+git add .
+git commit -m "Pujada Projecte C"
+git push origin main
+--Fi Versio 3--
 
