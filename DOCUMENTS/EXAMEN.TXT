@@ -27,4 +27,10 @@ git add .
 git commit -m "Pujada Projecte C"
 git push origin main
 --Fi Versio 3--
+--Versio 4--
+Despres de modificar i afegir els buttons farem:
+git add .
+git commit -m "Posar 2 Botons i canviar el nom del form"
+git push origin main
+--Fi Versio 4--
 
