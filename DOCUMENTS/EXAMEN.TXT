@@ -1,1 +1,24 @@
 Aqui posarem les comandes per l'examen
+mkdir examenm5uf2
+cd examenm5uf2
+git init 
+nano README.MD -> Aquest es un examen de Marc Llorca i sha fet el dia 13/3/2023
+nano AUTHOR.TXT -> Marc Llorca Lorenzo DAM2
+mkdir DOCUMENTS
+cd DOCUMENTS
+nano EXAMEN.TXT -> aqui anirem posant totes les comandes
+Despres de crear el directori en linea farem:
+git branch -M main
+git add .
+git commit -m "Pujada de AUTHOR , README i DOCUMENTSExamen"
+git remote add origin https://github.com/llorcaaahub/examenm5uf2.git
+git push -u origin main
+--Fi Versio 1--
+--Versio 2--
+nano LICENSE -> Posem la llicencia de gnu GPL
+nano DOCUMENTS/EXAMEN.TXT -> Posem les dades anteriors
+git add .
+git commit -m "Pujada de Llicencia i examen.txt"
+git push origin main
+--Fi Versio 2--
+
