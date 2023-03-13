@@ -10,11 +10,56 @@ using System.Windows.Forms;
 
 namespace ProjecteCProjectem5uf2
 {
-    public partial class Form1 : Form
+    public partial class FrmMain : Form
     {
-        public Form1()
+        FrmMenjar formMenjar = null;
+        FrmViatge formViatge = null;
+
+        public FrmMain()
         {
             InitializeComponent();
         }
+
+        private void btnMenjar_Click(object sender, EventArgs e)
+        {
+            if (!isOpen("FrmMenjar"))
+            {
+                formMenjar = new FrmMenjar();
+                formMenjar.MdiParent = this;
+                formMenjar.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ja tens obert aquest Formulari", "Informació", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnViatge_Click(object sender, EventArgs e)
+        {
+            if (!isOpen("FrmViatge"))
+            {
+                formViatge = new FrmViatge();
+                formViatge.MdiParent = this;
+                formViatge.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ja tens obert aquest Formulari", "Informació", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private Boolean isOpen(string formulari)
+        {
+            int x1 = 0;
+            Boolean xb = false;
+
+            while ((x1 < this.MdiChildren.Length) && (!(xb)))
+            {
+                xb = (this.MdiChildren[x1].Name == formulari);
+                x1++;
+            }
+            return xb;
+        }
+
     }
-}
+    }

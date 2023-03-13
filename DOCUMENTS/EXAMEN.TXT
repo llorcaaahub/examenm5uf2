@@ -33,4 +33,8 @@ git add .
 git commit -m "Posar 2 Botons i canviar el nom del form"
 git push origin main
 --Fi Versio 4--
-
+--Versio 5--
+git add .
+git commit -m "Pujada projecte Viatge/Menjar"
+git push origin main
+--Fi Versio 5--
