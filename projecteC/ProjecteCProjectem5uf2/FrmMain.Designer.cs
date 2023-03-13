@@ -30,6 +30,7 @@
         {
             this.btnMenjar = new System.Windows.Forms.Button();
             this.btnViatge = new System.Windows.Forms.Button();
+            this.btnAnimal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMenjar
@@ -54,11 +55,23 @@
             this.btnViatge.UseVisualStyleBackColor = false;
             this.btnViatge.Click += new System.EventHandler(this.btnViatge_Click);
             // 
+            // btnAnimal
+            // 
+            this.btnAnimal.BackColor = System.Drawing.Color.Blue;
+            this.btnAnimal.Location = new System.Drawing.Point(431, 66);
+            this.btnAnimal.Name = "btnAnimal";
+            this.btnAnimal.Size = new System.Drawing.Size(75, 23);
+            this.btnAnimal.TabIndex = 3;
+            this.btnAnimal.Text = "Animal";
+            this.btnAnimal.UseVisualStyleBackColor = false;
+            this.btnAnimal.Click += new System.EventHandler(this.btnAnimal_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAnimal);
             this.Controls.Add(this.btnViatge);
             this.Controls.Add(this.btnMenjar);
             this.IsMdiContainer = true;
@@ -72,6 +85,7 @@
 
         private System.Windows.Forms.Button btnMenjar;
         private System.Windows.Forms.Button btnViatge;
+        private System.Windows.Forms.Button btnAnimal;
     }
 }
 

@@ -14,6 +14,8 @@ namespace ProjecteCProjectem5uf2
     {
         FrmMenjar formMenjar = null;
         FrmViatge formViatge = null;
+        FrmAnimal formAnimal = null;
+
 
         public FrmMain()
         {
@@ -61,5 +63,18 @@ namespace ProjecteCProjectem5uf2
             return xb;
         }
 
+        private void btnAnimal_Click(object sender, EventArgs e)
+        {
+            if (!isOpen("FrmAnimal"))
+            {
+                formAnimal = new FrmAnimal();
+                formAnimal.MdiParent = this;
+                formAnimal.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ja tens obert aquest Formulari", "Informació", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
     }

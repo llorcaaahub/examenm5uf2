@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimal.Designer.cs">
+      <DependentUpon>FrmAnimal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnimal.resx">
+      <DependentUpon>FrmAnimal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Foto_Australia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gatete.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
