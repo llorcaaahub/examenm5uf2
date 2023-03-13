@@ -64,3 +64,9 @@ git push origin main
 git add .
 git commit -m "Versio 8"
 git push origin main
+
+--Correcio GITIGNORE--
+git add .
+git commit -m "GitIgnore"
+git push origin main
+
